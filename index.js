@@ -1451,7 +1451,7 @@ function MockXhr() {
  *
  * This service is just a simple decorator for {@link ng.$timeout $timeout} service
  * that adds a "flush" and "verifyNoPendingTasks" methods.
- */ 
+ */
 
 angular.mock.$TimeoutDecorator = function($delegate, $browser) {
 
@@ -1743,6 +1743,7 @@ window.jstestdriver && (function(window) {
   });
 
   afterEach(function() {
+    console.log('current spec',currentSpec,currentSpec.$injector)
     var injector = currentSpec.$injector;
 
     currentSpec.$injector = null;
