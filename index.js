@@ -1,3 +1,4 @@
+require('angular')
 /**
  * @license AngularJS v1.1.5
  * (c) 2010-2012 Google, Inc. http://angularjs.org
@@ -1743,7 +1744,6 @@ window.jstestdriver && (function(window) {
   });
 
   afterEach(function() {
-    console.log('current spec',currentSpec,currentSpec.$injector)
     var injector = currentSpec.$injector;
 
     currentSpec.$injector = null;
