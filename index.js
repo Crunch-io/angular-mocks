@@ -305,7 +305,8 @@ angular.mock.$LogProvider = function() {
       log: function() { $log.log.logs.push(concat([], arguments, 0)); },
       warn: function() { $log.warn.logs.push(concat([], arguments, 0)); },
       info: function() { $log.info.logs.push(concat([], arguments, 0)); },
-      error: function() { $log.error.logs.push(concat([], arguments, 0)); }
+      error: function() { $log.error.logs.push(concat([], arguments, 0)); },
+      debug: function() { $log.debug.logs.push(concat([], arguments, 0)); }
     };
 
     /**
@@ -377,6 +378,21 @@ angular.mock.$LogProvider = function() {
        * </pre>
        */
       $log.error.logs = [];
+      /**
+       * @ngdoc property
+       * @name ngMock.$log#debug.logs
+       * @propertyOf ngMock.$log
+       *
+       * @description
+       * Array of messages logged using {@link ngMock.$log#error}.
+       *
+       * @example
+       * <pre>
+       * $log.log('Some Error');
+       * var first = $log.error.logs.unshift();
+       * </pre>
+       */
+      $log.debug.logs = [];
     };
 
     /**
