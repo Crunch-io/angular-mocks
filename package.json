@@ -1,0 +1,14 @@
+{
+  "name": "angular-mocks",
+  "repo": "Crunch-io/angular-mocks",
+  "description": "ng mocks",
+  "version": "1.1.5",
+  "keywords": [],
+  "dependencies": {
+      "Crunch-io/angular":"git+https://github.com/Crunch-io/angular.git"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ]
+}
